@@ -6,6 +6,8 @@ The default structure is based on Silicon IP development phases and I'm using Se
 
 Ultimately, it should work for any type of projecct and you can add charts and maybe extend to Jira and other project management tools.
 
+![Screenshot 2025-03-10 at 22 03 12](https://github.com/user-attachments/assets/349fb376-5241-4dda-a62b-caccc7756198)
+
 ## How to run
 Follow these steps
 

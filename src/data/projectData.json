@@ -1,0 +1,531 @@
+{
+    "projectInfo": {
+      "id": "SDS-112G-01",
+      "name": "Next-Gen 112G PAM4 SerDes IP",
+      "description": "High-performance SerDes IP targeting 112 Gbps per lane for next-generation data center connectivity",
+      "startDate": "2024-05-01",
+      "targetCompletionDate": "2025-09-30",
+      "status": "On Track",
+      "targetStandards": ["PCIe Gen6", "Ethernet 800G"],
+      "technology": "TSMC 5nm",
+      "targetMarkets": ["Data Center", "AI/ML Infrastructure", "High Performance Computing"]
+    },
+    
+    "phaseGates": [
+      {
+        "id": 1,
+        "name": "Concept Phase",
+        "description": "Initial concept development and requirements specification",
+        "status": "Completed",
+        "startDate": "2024-05-01",
+        "endDate": "2024-06-30",
+        "plannedEndDate": "2024-06-30",
+        "checkoutCriteria": [
+          {
+            "id": "CC-01",
+            "name": "Requirements Document",
+            "status": "Completed",
+            "verificationMethod": "Management Review",
+            "owner": "Product Manager"
+          },
+          {
+            "id": "CC-02",
+            "name": "High-level Architecture",
+            "status": "Completed",
+            "verificationMethod": "Technical Review",
+            "owner": "Chief Architect"
+          },
+          {
+            "id": "CC-03",
+            "name": "Market Analysis",
+            "status": "Completed",
+            "verificationMethod": "Management Review",
+            "owner": "Marketing"
+          },
+          {
+            "id": "CC-04",
+            "name": "Feasibility Study",
+            "status": "Completed",
+            "verificationMethod": "Technical Review",
+            "owner": "R&D Lead"
+          }
+        ],
+        "technicalSpecifications": {
+          "targetPower": "< 9W",
+          "targetArea": "< 3.5 mm²",
+          "targetPerformance": "112 Gbps/lane",
+          "targetJitter": "< 0.1 UI",
+          "targetBER": "10^-12"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Design Phase",
+        "description": "Detailed design of SerDes architecture and circuits",
+        "status": "In Progress",
+        "startDate": "2024-07-01",
+        "endDate": null,
+        "plannedEndDate": "2024-11-30",
+        "checkoutCriteria": [
+          {
+            "id": "DC-01",
+            "name": "RTL Coding Complete",
+            "status": "In Progress",
+            "verificationMethod": "Code Review",
+            "owner": "Digital Design Lead"
+          },
+          {
+            "id": "DC-02",
+            "name": "PLL Design Complete",
+            "status": "In Progress",
+            "verificationMethod": "Simulation Results Review",
+            "owner": "Analog Design Lead"
+          },
+          {
+            "id": "DC-03",
+            "name": "CDR Architecture",
+            "status": "Completed",
+            "verificationMethod": "Simulation Results Review",
+            "owner": "Mixed-Signal Design Lead"
+          },
+          {
+            "id": "DC-04",
+            "name": "Equalization Scheme",
+            "status": "Completed",
+            "verificationMethod": "Simulation Results Review",
+            "owner": "Signal Integrity Lead"
+          },
+          {
+            "id": "DC-05",
+            "name": "Verification Plan",
+            "status": "In Progress",
+            "verificationMethod": "Review Meeting",
+            "owner": "Verification Lead"
+          }
+        ],
+        "technicalPerformance": {
+          "rtlCoverage": "72%",
+          "timingMet": "85%",
+          "powerEstimate": "8.7W",
+          "areaEstimate": "3.4 mm²",
+          "simulatedBER": "10^-12",
+          "simulatedJitter": "0.12 UI"
+        }
+      },
+      {
+        "id": 3,
+        "name": "Implementation Phase",
+        "description": "Physical implementation and timing closure",
+        "status": "Not Started",
+        "startDate": null,
+        "endDate": null,
+        "plannedEndDate": "2025-03-31",
+        "checkoutCriteria": [
+          {
+            "id": "IC-01",
+            "name": "Physical Design Complete",
+            "status": "Not Started",
+            "verificationMethod": "Design Review",
+            "owner": "Layout Lead"
+          },
+          {
+            "id": "IC-02",
+            "name": "Timing Closure Achieved",
+            "status": "Not Started",
+            "verificationMethod": "Timing Report Review",
+            "owner": "Timing Closure Lead"
+          },
+          {
+            "id": "IC-03",
+            "name": "Power Grid Design",
+            "status": "Not Started",
+            "verificationMethod": "Power Analysis Review",
+            "owner": "Power Integrity Lead"
+          },
+          {
+            "id": "IC-04",
+            "name": "Signal Integrity Analysis",
+            "status": "Not Started",
+            "verificationMethod": "SI Report Review",
+            "owner": "Signal Integrity Lead"
+          }
+        ],
+        "technicalPerformance": {
+          "timingClosure": "Not Started",
+          "powerAnalysis": "Not Started",
+          "irDropAnalysis": "Not Started",
+          "emAnalysis": "Not Started"
+        }
+      },
+      {
+        "id": 4,
+        "name": "Verification Phase",
+        "description": "Comprehensive verification of design",
+        "status": "Not Started",
+        "startDate": null,
+        "endDate": null,
+        "plannedEndDate": "2025-06-30",
+        "checkoutCriteria": [
+          {
+            "id": "VC-01",
+            "name": "Functional Verification Complete",
+            "status": "Not Started",
+            "verificationMethod": "Coverage Report Review",
+            "owner": "Verification Lead"
+          },
+          {
+            "id": "VC-02",
+            "name": "Gate-level Verification Complete",
+            "status": "Not Started",
+            "verificationMethod": "Coverage Report Review",
+            "owner": "Post-Silicon Verification Lead"
+          },
+          {
+            "id": "VC-03",
+            "name": "Mixed-signal Verification Complete",
+            "status": "Not Started",
+            "verificationMethod": "AMS Verification Report",
+            "owner": "Mixed-Signal Verification Lead"
+          },
+          {
+            "id": "VC-04",
+            "name": "Performance Verification Complete",
+            "status": "Not Started",
+            "verificationMethod": "Performance Report Review",
+            "owner": "Performance Verification Lead"
+          }
+        ],
+        "technicalPerformance": {
+          "functionalCoverage": "0%",
+          "jitterPerformance": "Not Measured",
+          "berPerformance": "Not Measured",
+          "crosstalkAnalysis": "Not Started"
+        }
+      },
+      {
+        "id": 5,
+        "name": "Pre-Silicon Validation",
+        "description": "FPGA prototyping and emulation",
+        "status": "Not Started",
+        "startDate": null,
+        "endDate": null,
+        "plannedEndDate": "2025-07-31",
+        "checkoutCriteria": [
+          {
+            "id": "PV-01",
+            "name": "FPGA Prototype Working",
+            "status": "Not Started",
+            "verificationMethod": "Demo Review",
+            "owner": "FPGA Prototyping Lead"
+          },
+          {
+            "id": "PV-02",
+            "name": "Emulation Complete",
+            "status": "Not Started",
+            "verificationMethod": "Emulation Report Review",
+            "owner": "Emulation Lead"
+          },
+          {
+            "id": "PV-03",
+            "name": "Test Chip Validated",
+            "status": "Not Started",
+            "verificationMethod": "Test Report Review",
+            "owner": "Test Chip Lead"
+          }
+        ],
+        "technicalPerformance": {
+          "prototypePerformance": "Not Measured",
+          "interoperabilityTests": "0/50 completed"
+        }
+      },
+      {
+        "id": 6,
+        "name": "Tape-Out",
+        "description": "Final GDSII preparation and submission",
+        "status": "Not Started",
+        "startDate": null,
+        "endDate": null,
+        "plannedEndDate": "2025-08-15",
+        "checkoutCriteria": [
+          {
+            "id": "TO-01",
+            "name": "Final DRC Clean",
+            "status": "Not Started",
+            "verificationMethod": "DRC Report Review",
+            "owner": "Physical Verification Lead"
+          },
+          {
+            "id": "TO-02",
+            "name": "Final LVS Clean",
+            "status": "Not Started",
+            "verificationMethod": "LVS Report Review",
+            "owner": "Physical Verification Lead"
+          },
+          {
+            "id": "TO-03",
+            "name": "GDSII Generation Complete",
+            "status": "Not Started",
+            "verificationMethod": "GDSII Review",
+            "owner": "CAD Lead"
+          },
+          {
+            "id": "TO-04",
+            "name": "Foundry Submission Complete",
+            "status": "Not Started",
+            "verificationMethod": "Foundry Acceptance",
+            "owner": "Project Manager"
+          }
+        ],
+        "technicalPerformance": {
+          "drcViolations": "Not Started",
+          "lvsViolations": "Not Started"
+        }
+      },
+      {
+        "id": 7,
+        "name": "Post-Silicon",
+        "description": "Silicon validation and characterization",
+        "status": "Not Started",
+        "startDate": null,
+        "endDate": null,
+        "plannedEndDate": "2025-09-30",
+        "checkoutCriteria": [
+          {
+            "id": "PS-01",
+            "name": "Silicon Bring-up Complete",
+            "status": "Not Started",
+            "verificationMethod": "Bring-up Report Review",
+            "owner": "Silicon Validation Lead"
+          },
+          {
+            "id": "PS-02",
+            "name": "Lab Characterization Complete",
+            "status": "Not Started",
+            "verificationMethod": "Characterization Report",
+            "owner": "Lab Lead"
+          },
+          {
+            "id": "PS-03",
+            "name": "Compliance Testing Complete",
+            "status": "Not Started",
+            "verificationMethod": "Compliance Report",
+            "owner": "Compliance Lead"
+          },
+          {
+            "id": "PS-04",
+            "name": "Customer Samples Provided",
+            "status": "Not Started",
+            "verificationMethod": "Customer Feedback",
+            "owner": "Product Manager"
+          }
+        ],
+        "technicalPerformance": {
+          "measuredPower": "Not Measured",
+          "measuredJitter": "Not Measured",
+          "measuredBER": "Not Measured",
+          "complianceStatus": "Not Started"
+        }
+      }
+    ],
+    
+    "riskRegister": [
+      {
+        "id": "RISK-01",
+        "description": "CDR might not meet jitter tolerance requirements",
+        "impact": "High",
+        "probability": "Medium",
+        "riskRating": "High",
+        "phase": "Design",
+        "status": "Open",
+        "owner": "Mixed-Signal Design Lead",
+        "mitigation": "Implementing adaptive equalization and exploring alternative CDR architectures",
+        "contingency": "Fall back to previous generation CDR with proven performance",
+        "lastUpdated": "2024-09-15"
+      },
+      {
+        "id": "RISK-02",
+        "description": "Power consumption exceeding targets",
+        "impact": "High",
+        "probability": "Medium",
+        "riskRating": "High",
+        "phase": "Design",
+        "status": "Open",
+        "owner": "Power Manager",
+        "mitigation": "Power gating strategies and clock optimization in progress",
+        "contingency": "Increase power budget or reduce performance targets",
+        "lastUpdated": "2024-09-20"
+      },
+      {
+        "id": "RISK-03",
+        "description": "Timing closure challenges in high-speed paths",
+        "impact": "High",
+        "probability": "High",
+        "riskRating": "High",
+        "phase": "Implementation",
+        "status": "Open",
+        "owner": "Timing Closure Lead",
+        "mitigation": "Advanced floor planning and dedicated timing analysis team assigned",
+        "contingency": "Reduce clock frequency or revise architecture",
+        "lastUpdated": "2024-08-30"
+      },
+      {
+        "id": "RISK-04",
+        "description": "Interoperability issues with new standards",
+        "impact": "Medium",
+        "probability": "Medium",
+        "riskRating": "Medium",
+        "phase": "Verification",
+        "status": "Open",
+        "owner": "Standards Compliance Lead",
+        "mitigation": "Early engagement with standards bodies and implementation of compliance test suite",
+        "contingency": "Extend verification phase for additional testing",
+        "lastUpdated": "2024-09-10"
+      },
+      {
+        "id": "RISK-05",
+        "description": "Channel loss higher than anticipated",
+        "impact": "Medium",
+        "probability": "Low",
+        "riskRating": "Low",
+        "phase": "Design",
+        "status": "Closed",
+        "owner": "Signal Integrity Lead",
+        "mitigation": "Enhanced equalization scheme implemented in architecture",
+        "contingency": "N/A - Risk Closed",
+        "lastUpdated": "2024-08-15",
+        "closureReason": "Enhanced equalization scheme successfully implemented"
+      }
+    ],
+    
+    "technicalSpecifications": {
+      "performance": {
+        "dataRate": "112 Gbps/lane",
+        "lanes": "1-16",
+        "signaling": "PAM4",
+        "channelLoss": "36 dB @ Nyquist",
+        "reach": "> 3m FR4, > 2m copper cable"
+      },
+      "power": {
+        "targetPower": "< 9W for 4 lanes",
+        "currentEstimate": "8.7W for 4 lanes",
+        "powerEfficiency": "< 20 pJ/bit"
+      },
+      "area": {
+        "targetArea": "< 3.5 mm²",
+        "currentEstimate": "3.4 mm²"
+      },
+      "jitter": {
+        "targetRJ": "< 200 fs RMS",
+        "targetDJ": "< 0.05 UI",
+        "targetTJ": "< 0.1 UI @ BER 10^-12",
+        "currentEstimate": "0.12 UI @ BER 10^-12"
+      },
+      "ber": {
+        "target": "< 10^-12",
+        "currentEstimate": "10^-12"
+      },
+      "eyeQuality": {
+        "targetHeight": "> 100 mV",
+        "targetWidth": "> 0.6 UI",
+        "currentEstimate": "95 mV height, 0.58 UI width"
+      },
+      "standards": {
+        "pcie": "PCIe Gen6",
+        "ethernet": "800G Ethernet",
+        "customProtocolSupport": true
+      }
+    },
+    
+    "verificationStatus": {
+      "rtlCoverage": {
+        "lineCoverage": "72%",
+        "funcCoverage": "65%",
+        "branchCoverage": "70%",
+        "assertionCoverage": "55%",
+        "target": "95%"
+      },
+      "bugStatus": {
+        "openBugs": {
+          "critical": 2,
+          "high": 6,
+          "medium": 18,
+          "low": 12
+        },
+        "closedBugs": {
+          "critical": 3,
+          "high": 14,
+          "medium": 25,
+          "low": 18
+        },
+        "bugDiscoveryRate": "1.5 bugs/week",
+        "bugFixRate": "2.2 bugs/week"
+      },
+      "testCases": {
+        "total": 2450,
+        "passing": 1950,
+        "failing": 120,
+        "blocked": 380
+      }
+    },
+    
+    "budget": {
+      "allocated": 4500000,
+      "spent": 1125000,
+      "remaining": 3375000,
+      "spendRate": 125000,
+      "forecastedFinalCost": 4350000,
+      "costBreakdown": {
+        "headcount": 850000,
+        "tools": 145000,
+        "ip": 85000,
+        "prototyping": 45000
+      }
+    },
+    
+    "resources": {
+      "team": {
+        "totalHeadcount": 24,
+        "breakdown": {
+          "digitalDesign": 6,
+          "analogDesign": 4,
+          "verification": 8,
+          "physicalDesign": 3,
+          "productManagement": 1,
+          "projectManagement": 1,
+          "systemsEngineering": 1
+        }
+      },
+      "utilizationRate": 85,
+      "criticalSkillGaps": [
+        {
+          "skill": "PAM4 Equalization Expertise",
+          "impact": "Medium",
+          "mitigationPlan": "Consulting with external expert"
+        },
+        {
+          "skill": "Advanced CTLE Design",
+          "impact": "Low",
+          "mitigationPlan": "Training scheduled"
+        }
+      ]
+    },
+    
+    "compliance": {
+      "standards": [
+        {
+          "name": "PCIe Gen6",
+          "status": "In Progress",
+          "compliance": "45%",
+          "testsPassed": 78,
+          "testsTotal": 175
+        },
+        {
+          "name": "IEEE 802.3ck",
+          "status": "In Progress",
+          "compliance": "38%",
+          "testsPassed": 42,
+          "testsTotal": 110
+        }
+      ]
+    }
+  }
